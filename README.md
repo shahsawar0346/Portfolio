@@ -1,2 +1,2 @@
 # Personal Portfolio
-this is my first portfolio website
+this is my first personal portfolio website
