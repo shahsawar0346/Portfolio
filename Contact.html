@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100%;
+            background-color: pink;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            text-shadow: 2px 2px 12px darkblue, 2px 4px 23px greenyellow;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+
+        }
+
+
+        Nav ul li a {
+            text-decoration: none;
+            margin-left: 30px;
+            color: black;
+            font-size: large;
+            padding: 12px 10px;
+            font-weight: bold;
+            border-top: 1px solid black;
+            border-radius: 30px;
+
+        }
+
+        nav ul li a:hover {
+            background-color: transparent;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            list-style-type: none;
+        }
+
+        nav ul {
+            border: 1px dashed black;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+
+        }
+
+        form {
+            border: 2px solid black;
+            width: 400px;
+            height: 460px;
+            text-align: center;
+            margin-top: 14px;
+            margin-left: 280px;
+            box-shadow: 2px 1px 13px brown, 3px 1px 20px red, 2px 1px 16px limegreen;
+            border-radius: 25px;
+            background-color: palegoldenrod;
+        }
+
+        form input {
+            margin-top: 15px;
+            height: 18px;
+
+        }
+
+        form h1 {
+            text-shadow: 2px 2px 12px rgb(176, 99, 16), 2px 4px 23px rgb(155, 15, 3);
+        }
+
+        .img {
+            margin-left: 600px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Mohmand agency Beauty</h1>
+        </header>
+        <nav>
+
+            <ul>
+                <h1>Logo</h1>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="Gallery.html">PLACE</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="table.html">PERSONS</a></li>
+        </nav>
+
+        <form action="">
+
+            <h1>Contact page</h1>
+
+            <label class="name" id="shah">Name</label>
+            <input type="text" id="name" name="name" value="" placeholder="enter your name">
+            <br><br>
+
+
+            <label class="name" id="shah">FName</label>
+            <input type="text" id="name" name="name" value="" placeholder="enter your fname">
+            <br><br>
+
+
+            <label for="Number">Number</label>
+            <input type="number" id="number" name="n" value="" placeholder="enter your number">
+
+
+            <br><br>
+            <label for="Email Number">Email :</label>
+            <input type="Email" name="Email number" id="ema" value="" placeholder="enter your email">
+
+            <br><br>
+            <label for="gender">Gender</label>
+            <label for="">Male</label>
+            <input type="radio" id="male" name="mygender" value="">
+            <label for="">female</label>
+            <input type="radio" id="female" name="mygender" value="">
+
+            <br><br>
+            <label for="Date of birth">date of brith
+                <input type="date" id="date" name="d" value="">
+            </label>
+
+            <br><br>
+            <label for="Date of birth">Date
+                <input type="date" id="date" name="d" value="">
+            </label>
+
+            <br><br>
+            <label for="Date of birth">Time
+                <input type="time" id="date" name="d" value="">
+            </label>
+
+
+
+
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            text-shadow: 2px 2px 12px darkblue, 2px 4px 23px greenyellow;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+
+        }
+
+
+        Nav ul li a {
+            text-decoration: none;
+            margin-left: 30px;
+            color: black;
+            font-size: large;
+            padding: 12px 10px;
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            border-radius: 30px;
+            box-shadow: 0 0 5px rgb(203, 52, 18), 0 0 25px rgb(202, 34, 4);
+
+
+        }
+
+        nav ul li a:hover {
+            background-color: transparent;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            list-style-type: none;
+        }
+
+        nav ul {
+
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+
+
+            padding: 20px;
+
+        }
+
+        .con {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+
+        }
+
+        .card1{
+            border: 1px solid black;
+            width: 700px;
+            border-radius: 23px;
+            margin-left: 10px;
+            margin-right: 12px;
+            height: 400px;
+            box-shadow: 2px 1px 13px rgb(141, 111, 111), 3px 1px 20px rgb(35, 17, 17), 2px 1px 16px rgb(35, 4, 4);
+
+        }
+
+        .card1 h2{
+            text-align: center;
+            text-shadow: 2px 2px 12px darkblue, 2px 4px 23px greenyellow;
+        }
+
+        .card1 p {
+            line-height: 23px;
+            text-align: justify;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .card1 button {
+            margin-left: 100px;
+            margin-top: 12px;
+            padding: 10px 12px;
+            border-radius: 12px;
+            background-color: rgb(19, 70, 80);
+            font-weight: bold;
+        }
+
+        .card1 button:hover {
+            background-color: transparent;
+        }
+
+        .card2{
+            border: 1px solid black;
+            width: 700px;
+            border-radius: 23px;
+            margin-left: 10px;
+            margin-right: 12px;
+            height: 400px;
+            box-shadow: 2px 1px 13px rgb(141, 111, 111), 3px 1px 20px rgb(35, 17, 17), 2px 1px 16px rgb(35, 4, 4);
+
+        }
+
+        .card2 h2{
+            text-align: center;
+            text-shadow: 2px 2px 12px darkblue, 2px 4px 23px greenyellow;
+        }
+
+        .card2 p {
+            line-height: 23px;
+            text-align: justify;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .card2 button {
+            margin-left: 100px;
+            margin-top: 12px;
+            padding: 10px 12px;
+            border-radius: 12px;
+            background-color: rgb(19, 70, 80);
+            font-weight: bold;
+        }
+
+        .card2 button:hover {
+            background-color: transparent;
+        }
+
+        .card3{
+            border: 1px solid black;
+            width: 700px;
+            border-radius: 23px;
+            margin-left: 10px;
+            margin-right: 12px;
+            height: 400px;
+            box-shadow: 2px 1px 13px rgb(141, 111, 111), 3px 1px 20px rgb(35, 17, 17), 2px 1px 16px rgb(35, 4, 4);
+
+        }
+
+        .card3 h2{
+            text-align: center;
+            text-shadow: 2px 2px 12px darkblue, 2px 4px 23px greenyellow;
+        }
+
+        .card3 p {
+            line-height: 23px;
+            text-align: justify;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .card3 button {
+            margin-left: 100px;
+            margin-top: 12px;
+            padding: 10px 12px;
+            border-radius: 12px;
+            background-color: rgb(19, 70, 80);
+            font-weight: bold;
+        }
+
+        .card3 button:hover {
+            background-color: transparent;
+        }
+
+       
+
+        .con2{
+            display: flex;
+            flex-direction: row;
+            margin-top: 12px;
+
+        }
+
+        .card4{
+            border: 1px solid black;
+            width: 700px;
+            border-radius: 23px;
+            margin-left: 10px;
+            margin-right: 12px;
+            height: 400px;
+            box-shadow: 2px 1px 13px rgb(141, 111, 111), 3px 1px 20px rgb(35, 17, 17), 2px 1px 16px rgb(35, 4, 4);
+
+        }
+
+        .card4 h2{
+            text-align: center;
+            text-shadow: 2px 2px 12px darkblue, 2px 4px 23px greenyellow;
+        }
+
+        .card4 p {
+            line-height: 23px;
+            text-align: justify;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .card4 button {
+            margin-left: 100px;
+            margin-top: 12px;
+            padding: 10px 12px;
+            border-radius: 12px;
+            background-color: rgb(19, 70, 80);
+            font-weight: bold;
+        }
+
+        .card4 button:hover {
+            background-color: transparent;
+        }
+
+        .card5{
+            border: 1px solid black;
+            width: 700px;
+            border-radius: 23px;
+            margin-left: 10px;
+            margin-right: 12px;
+            height: 400px;
+            box-shadow: 2px 1px 13px rgb(141, 111, 111), 3px 1px 20px rgb(35, 17, 17), 2px 1px 16px rgb(35, 4, 4);
+
+        }
+
+        .card5 h2{
+            text-align: center;
+            text-shadow: 2px 2px 12px darkblue, 2px 4px 23px greenyellow;
+        }
+
+        .card5 p {
+            line-height: 23px;
+            text-align: justify;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .card5 button {
+            margin-left: 100px;
+            margin-top: 12px;
+            padding: 10px 12px;
+            border-radius: 12px;
+            background-color: rgb(19, 70, 80);
+            font-weight: bold;
+        }
+
+        .card5 button:hover {
+            background-color: transparent;
+        }
+
+        .card6{
+            border: 1px solid black;
+            width: 700px;
+            border-radius: 23px;
+            margin-left: 10px;
+            margin-right: 12px;
+            height: 400px;
+            box-shadow: 2px 1px 13px rgb(141, 111, 111), 3px 1px 20px rgb(35, 17, 17), 2px 1px 16px rgb(35, 4, 4);
+
+        }
+
+        .card6 h2{
+            text-align: center;
+            text-shadow: 2px 2px 12px darkblue, 2px 4px 23px greenyellow;
+        }
+
+        .card6 p {
+            line-height: 23px;
+            text-align: justify;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .card6 button {
+            margin-left: 100px;
+            margin-top: 12px;
+            padding: 10px 12px;
+            border-radius: 12px;
+            background-color: rgb(19, 70, 80);
+            font-weight: bold;
+        }
+
+        .card6 button:hover {
+            background-color: transparent;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Mohmand agency Beauty</h1>
+        </header>
+        <nav>
+
+            <ul>
+                <h1>Logo</h1>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="Gallery.html">PLACE</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="table.html">PERSONS</a></li>
+        </nav>
+    </div>
+
+    <div class="con">
+        <div class="card1">
+            <h2>Tehsil Halimazai</h2>
+            <P>Tehsil Halimazai is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer far
+                Tehsil Halimazai is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer far
+            </P>
+            <button>Read more</button>
+        </div>
+
+        <div class="card2">
+            <h2>Tehsil Taraqzai</h2>
+            <P>Tehsil Taraqzai is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer far
+                Tehsil Taraqzai is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer fa
+            </P>
+            <button>Read more</button>
+        </div>
+
+        <div class="card3">
+            <h2>Safi</h2>
+            <P>Tehsil Safi is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer far
+                Tehsil Safi is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer fa
+            </P>
+            <button>Read more</button>
+        </div>
+    </div>
+
+
+    <div class="con2">
+        <div class="card4">
+            <h2>Tehsil Halimazai</h2>
+            <P>Tehsil Halimazai is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer far
+                Tehsil Halimazai is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer far
+            </P>
+            <button>Read more</button>
+        </div>
+
+        <div class="card5">
+            <h2>Tehsil Taraqzai</h2>
+            <P>Tehsil Taraqzai is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer far
+                Tehsil Taraqzai is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer fa
+            </P>
+            <button>Read more</button>
+        </div>
+
+        <div class="card6">
+            <h2>Safi</h2>
+            <P>Tehsil Safi is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer far
+                Tehsil Safi is a beautifull place in Mohmand agency and here is
+                a lot of beautes eduction wide here present schools and colleges and Government degree
+                 college is one of the
+                best college in mohmand agency and peshawar is 30 kilometer fa
+            </P>
+            <button>Read more</button>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>
